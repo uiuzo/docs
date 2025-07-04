@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "RKT Scripts Docs",
   "colors": {
     "primary": "#6F52C1",
     "light": "#6F52C1",
