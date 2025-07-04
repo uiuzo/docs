@@ -7,49 +7,22 @@
     "light": "#6F52C1",
     "dark": "#6F52C1"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/rkt.svg",
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Docs",
         "groups": [
           {
-            "group": "Get Started",
+            "group": "Paid Scripts",
             "pages": [
-              "index",
-              "quickstart",
-              "development"
+              "paid/VipSistem"
             ]
           },
           {
-            "group": "Essentials",
+            "group": "Free Scripts",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/settings",
-              "essentials/navigation",
-              "essentials/reusable-snippets"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "API Reference",
-        "groups": [
-          {
-            "group": "API Documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint Examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "free/antibump"
             ]
           }
         ]
@@ -58,19 +31,19 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
+          "anchor": "Store",
+          "href": "https://rkt.tebex.io/",
+          "icon": "shop"
         },
         {
           "anchor": "Community",
           "href": "https://mintlify.com/community",
-          "icon": "slack"
+          "icon": "discord"
         },
         {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+          "anchor": "Free stuff",
+          "href": "https://github.com/rktscripts",
+          "icon": "github"
         }
       ]
     }
@@ -85,18 +58,11 @@
         "label": "Support",
         "href": "mailto:hi@mintlify.com"
       }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
-    }
+    ]
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "github": "https://github.com/rktscripts"
     }
   }
 }

@@ -1,0 +1,74 @@
+---
+title: 'Vip System'
+description: 'This script introduces a VIP system that allows players to activate a VIP item and receive exclusive rewards, including money bonuses, recurring salaries, vehicles, and items.'
+icon: 'star'
+---
+
+## Features
+
+- VIP Activation via Item – Players must have a specific item in their inventory to activate VIP.
+
+- Instant Money Bonus 💰 – Players receive a one-time cash bonus upon activation.
+
+- Recurring Salary 💵 – VIP members receive automatic payouts every X minutes.
+
+- Exclusive Vehicles 🚗 – Players can be rewarded with vehicles (if configured).
+
+- Special Items 🎁 – VIPs can receive exclusive items (if configured).
+
+- Server-Side Export – Check VIP status using the export function.
+
+- Fully Configurable – Easily edit settings in `cfg.lua`.
+
+### Installation Guide
+1. Dependencies:
+
+   - The script requires [ox_lib ](https://github.com/CommunityOx/ox_lib/releases) to function correctly.
+
+2. Import the Database:
+
+   - Navigate to the `sql` folder.
+
+   - Import the file `sql.sql` into your database.
+   2. Edit Notification Messages:
+
+   - Open `shared/config.lua` and customize notification strings.
+
+
+
+3. Configure Server Functions:
+
+   - Open `server/s_functions.lua` and adjust the necessary functions.
+
+
+
+4. Add New VIP Plans:
+
+   - Open `server/cfg.lua` and configure VIP packages.
+
+   - Ensure the item exists in the inventory system!
+
+
+
+5. Edit Client Notifications:
+
+   - Open `client/c_functions.lua` and modify client-side notifications.
+
+### Configuration
+
+```lua server/cfg.lua
+VIPConfig = {
+    ['vip1'] = { -- The indexer is the item name required for activation
+        bonus = 300, -- Money bonus upon VIP activation
+        paycheck = 500, -- VIP salary amount
+        interval = 30, -- Interval (in minutes) for salary payments
+        vehicle = {
+            model = {'comet5', 'comet2'}, -- List of available vehicles (nil if none)
+            amount = 1, -- Number of vehicles received
+        },
+        item = { -- Additional items received upon activation (nil if none)
+            ['testburger'] = 1, ['mustard'] = 2,
+        },
+    },
+}
+```

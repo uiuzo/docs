@@ -1,0 +1,38 @@
+---
+title: 'Antimbump'
+description: 'Removes speed gains in bump and break boosts.'
+icon: 'box'
+---
+
+# 📥 Installation
+
+1. **Download** the script through your [FiveM Keymaster](https://keymaster.fivem.net/) account.  
+2. Extract the downloaded `.zip` file.  
+3. Place the extracted folder inside your `resources` directory on your FiveM server.  
+4. Open your `server.cfg` and add the following line at the end to make sure the script starts correctly on server boot:
+
+   ```cfg
+   ensure antibump
+   ```
+
+5. Save the `server.cfg` file.  
+6. Restart your server or run the following commands in your server console to load the script without restarting:
+
+   ```bash
+   refresh
+   ensure antibump
+   ```
+
+✅ **Done!** The script should now be running and ready to use.  
+No additional dependencies are required.
+
+⚠️ **IMPORTANT** ⚠️
+
+All vehicles must have the `CCarHandlingData` field already defined; otherwise, FiveM will **NOT** be able to set advanced flags.
+
+```xml
+<SubHandlingData>
+    <Item type="CCarHandlingData">
+    </Item>
+</SubHandlingData>
+```
